@@ -1,5 +1,18 @@
 package com.example.olesya.service;
 
-public class StudentServiceImpl {
+import com.example.olesya.model.Student;
+import com.example.olesya.repository.StudentRepository;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class StudentServiceImpl implements StudentService  {
     
+    @Autowired
+    private StudentRepository studentRepository;
+
+    @Override
+    public Student saveStudent(Student student) {
+        return null;
+    }
 }
